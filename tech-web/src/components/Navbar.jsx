@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 
-function Navbar() {
+export const  Navbar = () => {
     let [activePage , setActivePage] = useState('home')
   return (
     <div className='flex justify-between items-center py-6'>
@@ -20,4 +20,3 @@ function Navbar() {
   )
 }
 
-export default Navbar
