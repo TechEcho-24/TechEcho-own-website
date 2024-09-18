@@ -1,15 +1,13 @@
-import React from 'react'
-import './App.css'
-import { Navbar } from './components/Navbar'
-import { Home } from './pages/Home'
+import React from "react";
+import "./App.css";
+import { Home } from "./components/pages/Home";
 
 function App() {
   return (
-    <div className='container mx-auto px-4'>
-      <Navbar />
+    <div>
       <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
