@@ -19,9 +19,9 @@
 .glossy-text {
 
   font-weight: bold;
-  color: #ffffff;
-  text-shadow: 0 0 5px #fff, /* Subtle shine */
-               0 0 10px #e9e5e5, 
+  color: #030A3d;
+  text-shadow: 0 0 5px #030A3d, /* Subtle shine */
+               0 0 10px #030A3d, 
                0 0 20px #06EFFA, 
                0 0 30px #06EFFA,
                0 0 40px #06EFFA, 
@@ -32,8 +32,8 @@
 
 @keyframes shine {
   0% {
-      text-shadow: 0 0 5px #fff,
-                   0 0 10px #ffffff, 
+      text-shadow: 0 0 5px #030A3d,
+                   0 0 10px #030A3d, 
                    0 0 20px #06EFFA, 
                    0 0 30px #06EFFA, 
                    0 0 40px #06EFFA, 
@@ -41,9 +41,9 @@
                    0 0 60px #06EFFA;
   }
   100% {
-      text-shadow: 0 0 10px #fff, 
-                   0 0 20px #fff, 
-                   0 0 30px #fff, 
+      text-shadow: 0 0 10px #030A3d, 
+                   0 0 20px #030A3d, 
+                   0 0 30px #030A3d, 
                    0 0 40px #06EFFA,
                    0 0 50px #06EFFA, 
                    0 0 60px #06EFFA, 

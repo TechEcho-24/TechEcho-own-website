@@ -1,7 +1,8 @@
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import ToggleSidePanel from "./ToggleSidePanel";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   let [activePage, setActivePage] = useState("home");
@@ -29,15 +30,14 @@ export const Navbar = () => {
         isScrolled ? "backdrop-grayscale-0" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center" onClick={() => setActivePage("home")}>
-        <img src="/assets/logo.png" alt="" className="w-full" />
-        <span className="text-2xl text-white text-shadow font-semibold mt-1 ml-2">
+      <div className='flex items-center' onClick={() => setActivePage("home")}>
+        <img src='/assets/logo.png' alt='' className='w-full' />
+        <span className='md:text-2xl text-xl text-white text-shadow font-semibold mt-1 ml-2'>
           TechEcho
         </span>
       </div>
-      <ToggleSidePanel />
-      <div className="flex">
-      <ul className="xl:flex navbar hidden">
+      <ToggleSidePanel activePage={activePage} setActivePage={setActivePage} />
+      <ul className='xl:flex navbar hidden'>
         <li
           onClick={() => setActivePage("about")}
           className={
@@ -46,7 +46,7 @@ export const Navbar = () => {
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
         >
-          About us
+          <Link to={"/about"}>About Us</Link>
         </li>
         <li
           onClick={() => setActivePage("service")}
@@ -56,7 +56,7 @@ export const Navbar = () => {
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
         >
-          Services
+          <Link to={"/services"}>Services</Link>
         </li>
         <li
           onClick={() => setActivePage("carrer")}
@@ -66,7 +66,7 @@ export const Navbar = () => {
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
         >
-          Career
+          <Link to={"/career"}>Career</Link>
         </li>
         <li
           onClick={() => setActivePage("contact")}
@@ -76,17 +76,19 @@ export const Navbar = () => {
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
         >
-          Contact Us
+          <Link to={"/about"}>Contact Us</Link>
         </li>
-      </ul>
         <button
-          className="border-2 border-[#06EFFA] text-white px-6 py-2 ml-8 text-xl cursor-pointer rounded-md"
+          className='border-2 border-[#06EFFA] text-white px-6 py-2 ml-8 text-xl cursor-pointer rounded-md'
           onClick={() => setActivePage("login")}
         >
-          <span className="mr-2">Login</span>
-          <FontAwesomeIcon icon={faRightToBracket} />
+          <Link to={"/signIn"}>
+            {" "}
+            <span className='mr-2'>Login</span>
+            <FontAwesomeIcon icon={faRightToBracket} />
+          </Link>
         </button>
-       </div>
+      </ul>
     </div>
   );
 };
