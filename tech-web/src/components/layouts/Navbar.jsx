@@ -1,6 +1,6 @@
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ToggleSidePanel from "./ToggleSidePanel";
 import { Link } from "react-router-dom";
 
