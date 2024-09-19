@@ -36,7 +36,7 @@ export const Navbar = () => {
         </span>
       </div>
       <ToggleSidePanel />
-      <div className="">
+      <div className="flex">
       <ul className="xl:flex navbar hidden">
         <li
           onClick={() => setActivePage("about")}
