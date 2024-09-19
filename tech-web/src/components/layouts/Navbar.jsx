@@ -1,8 +1,8 @@
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import ToggleSidePanel from "./ToggleSidePanel";
 import { Link } from "react-router-dom";
+import ToggleSidePanel from "./ToggleSidePanel";
 
 export const Navbar = () => {
   let [activePage, setActivePage] = useState("home");
@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 5) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -27,7 +27,7 @@ export const Navbar = () => {
     // todo: fix the layout in mobile screens
     <div
       className={`flex justify-between items-center py-6 px-8 ${
-        isScrolled ? "bg-transparent" : " backdrop-grayscale-0 bg-[#01135D]"
+        isScrolled ? " backdrop-grayscale-0 bg-[#01135D] " : "bg-transparent"
       }`}
     >
       <div className='flex items-center' onClick={() => setActivePage("home")}>
