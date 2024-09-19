@@ -6,10 +6,8 @@ import { Navbar } from "../layouts/Navbar";
 export const Home = () => {
   return (
     <>
-      <div className='relative'>
-        <div className='fixed w-full shadow-md z-10'>
-          <Navbar />
-        </div>
+      <div className="relative bg-black">
+        <Navbar />
         <Hero />
       </div>
     </>
