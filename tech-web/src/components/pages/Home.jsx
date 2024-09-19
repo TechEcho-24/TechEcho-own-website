@@ -6,7 +6,7 @@ import { Navbar } from "../layouts/Navbar";
 export const Home = () => {
   return (
     <>
-      <div className="relative bg-black">
+      <div className='relative overflow-x-hidden'>
         <Navbar />
         <Hero />
       </div>
