@@ -27,7 +27,7 @@ export const Navbar = () => {
     // todo: fix the layout in mobile screens
     <div
       className={`flex justify-between items-center py-6 px-8 ${
-        isScrolled ? "backdrop-grayscale-0" : "bg-transparent"
+        isScrolled ? "bg-transparent" : " backdrop-grayscale-0 bg-[#01135D]"
       }`}
     >
       <div className='flex items-center' onClick={() => setActivePage("home")}>
