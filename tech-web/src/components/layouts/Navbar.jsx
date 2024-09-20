@@ -59,9 +59,9 @@ export const Navbar = () => {
           <Link to={"/services"}>Services</Link>
         </li>
         <li
-          onClick={() => setActivePage("carrer")}
+          onClick={() => setActivePage("career")}
           className={
-            activePage === "carrer"
+            activePage === "career"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
