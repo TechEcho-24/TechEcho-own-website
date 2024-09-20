@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export const Stars = () => {
   const canvasRef = useRef(null);
@@ -53,6 +53,6 @@ export const Stars = () => {
     drawStars(ctx, stars.current); // Start drawing and animating stars
   }, []);
   return (
-    <canvas ref={canvasRef} className='fixed inset-0 w-full h-full'></canvas>
+    <canvas ref={canvasRef} className="fixed inset-0 w-full h-full"></canvas>
   );
 };
