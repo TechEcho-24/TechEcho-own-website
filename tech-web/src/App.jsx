@@ -11,13 +11,13 @@ import SignIn from "./components/pages/SignIn";
 
 function App() {
   return (
-    <div className='relative min-h-screen bg-black'>
+    <div className='relative min-h-screen bg-black overflow-x-hidden'>
       {/* Canvas for stars */}
       <Stars />
 
       {/* Main content */}
       <div className='absolute inset-0'>
-        <Navbar/>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
