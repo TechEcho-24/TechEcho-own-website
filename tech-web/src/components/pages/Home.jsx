@@ -3,6 +3,7 @@ import { Hero } from "../layouts/Hero";
 import { Stats } from "../layouts/Stats";
 import { Intro } from "../layouts/Intro";
 import { Service } from "../layouts/Service";
+import { About } from "../layouts/About";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
         <Stats />
         <Intro />
         <Service />
+        <About />
       </div>
     </>
   );
