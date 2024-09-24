@@ -5,17 +5,19 @@ import { Intro } from "../layouts/Intro";
 import { Service } from "../layouts/Service";
 import { About } from "../layouts/About";
 import { Contact } from "../layouts/Contact";
+import { Footer } from "../layouts/Footer";
 
 export const Home = () => {
   return (
     <>
-      <div className='relative'>
+      <div className='relative container mx-auto'>
         <Hero />
         <Stats />
         <Intro />
         <Service />
         <About />
         <Contact />
+        <Footer />
       </div>
     </>
   );
