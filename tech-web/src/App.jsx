@@ -16,7 +16,7 @@ function App() {
       <Stars />
 
       {/* Main content */}
-      <div className='absolute inset-0'>
+      <div className='relative inset-0 mx-auto container'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />

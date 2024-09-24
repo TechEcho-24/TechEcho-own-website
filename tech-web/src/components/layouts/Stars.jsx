@@ -16,14 +16,14 @@ export const Stars = () => {
     return starsArray;
   }
 
-  // Function to draw and animate the stars with slow movement
+  // Function to draw and animate the stars with more movement
   function drawStars(ctx, starsArray) {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height); // Clear canvas
 
     starsArray.forEach((star) => {
-      // Slow movement of stars
-      star.x += (Math.random() - 0.5) * 0.1; // Slow horizontal movement
-      star.y += (Math.random() - 0.5) * 0.1; // Slow vertical movement
+      // Increase the movement speed of stars
+      star.x += (Math.random() - 0.3) * 0.5; // Adjust this value for faster horizontal movement
+      star.y += (Math.random() - 0.1) * 0.5; // Adjust this value for faster vertical movement
 
       // If a star moves out of bounds, reposition it
       if (star.x < 0) star.x = ctx.canvas.width;
@@ -52,7 +52,8 @@ export const Stars = () => {
     stars.current = createStars(canvas, 300); // Create 300 stars
     drawStars(ctx, stars.current); // Start drawing and animating stars
   }, []);
+
   return (
-    <canvas ref={canvasRef} className="fixed inset-0 w-full h-full"></canvas>
+    <canvas ref={canvasRef} className='fixed inset-0 w-full h-full'></canvas>
   );
 };

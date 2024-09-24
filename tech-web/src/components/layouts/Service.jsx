@@ -11,7 +11,7 @@ let data = [
     description:
       " We develop innovative mobile apps for iOS and Android platforms.",
     detail:
-      " What people say about we helped them to that sweet ,sweet closday What people say about we helped them to that sweet ,swe closing day Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita",
+      " TechEcho specializes in building high-performance mobile and desktop apps that deliver seamless user experiences across Android and iOS. We develop scalable, secure applications tailored to your business needs, offering end-to-end solutions from design to deployment, ensuring exceptional functionality and user engagement.",
     image: "/assets/appDev.png",
   },
   {
@@ -20,7 +20,7 @@ let data = [
     description:
       " We develop innovative mobile apps for iOS and Android platforms.",
     detail:
-      " What people say about we helped them to that sweet ,sweet closday What people say about we helped them to that sweet ,swe closing day Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita",
+      " TechEcho creates dynamic, responsive websites using modern frameworks like React.js and Node.js. Our web development services focus on building scalable, secure platforms, including PWAs and e-commerce solutions, optimized for speed, SEO, and seamless user experiences across all devices.",
     image: "/assets/webDevelopment.png",
   },
   {
@@ -29,25 +29,17 @@ let data = [
     description:
       " We develop innovative mobile apps for iOS and Android platforms.",
     detail:
-      " What people say about we helped them to that sweet ,sweet closday What people say about we helped them to that sweet ,swe closing day Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita",
+      " TechEcho provides advanced AI solutions, including machine learning, NLP, and predictive analytics. We help businesses automate tasks, optimize operations, and enhance decision-making with AI-powered systems. Our AI integration transforms workflows, enabling smarter, data-driven processes for greater efficiency and innovation.",
     image: "/assets/ai.png",
   },
+
   {
     index: 3,
-    service: "Social Media Marketing",
-    description:
-      " We develop innovative mobile apps for iOS and Android platforms.",
-    detail:
-      " What people say about we helped them to that sweet ,sweet closday What people say about we helped them to that sweet ,swe closing day Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita",
-    image: "/assets/socialMedia.png",
-  },
-  {
-    index: 4,
     service: "Chatbot",
     description:
       " We develop innovative mobile apps for iOS and Android platforms.",
     detail:
-      " What people say about we helped them to that sweet ,sweet closday What people say about we helped them to that sweet ,swe closing day Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita",
+      " TechEcho builds intelligent chatbots with advanced natural language understanding (NLU) and machine learning. Our chatbots support text and voice interactions, enabling businesses to automate customer service, improve user satisfaction, and provide real-time, 24/7 assistance while seamlessly integrating with existing systems.",
     image: "/assets/chatbot.png",
   },
 ];
@@ -88,8 +80,8 @@ export const Service = () => {
       <div className='flex justify-center my-20'>
         <img src='/assets/service.png' alt='service' />
       </div>
-      <div className='flex md:flex-row flex-col justify-between px-32 my-40 items-center'>
-        <div className='text-white basis-1/3'>
+      <div className='flex md:flex-row flex-col px-32 my-40 items-center'>
+        <div className='text-white basis-1/2'>
           <h1 className='text-4xl font-extrabold my-4'>
             {selectedCard.service}
           </h1>
@@ -98,7 +90,7 @@ export const Service = () => {
             View More
           </button>
         </div>
-        <div className='basis-2/3 relative flex items-center'>
+        <div className='w-3/4 relative flex items-center'>
           <button onClick={handlePrevious} className='absolute left-20 z-10'>
             <FontAwesomeIcon
               icon={faChevronLeft}
@@ -109,8 +101,13 @@ export const Service = () => {
             {getDisplayedCard().map((card, index) => {
               return (
                 <div
-                  className={`text-white p-8 rounded-lg bg-[#3F3D56] w-[25rem] relative h-[38rem] transition duration-1000 ease-in-out ${
-                    index === 1 ? "" : "opacity-40 scale-75"
+                  key={card.service}
+                  className={`text-white p-8 rounded-lg bg-[#3F3D56] w-[25rem] h-[38rem] transition duration-1000 ease-in-out ${
+                    index === 1
+                      ? "absolute left-52 z-30"
+                      : "opacity-40 scale-75"
+                  } ${index === 0 ? "-rotate-12" : ""}  ${
+                    index === 2 ? "rotate-12" : ""
                   }`}
                 >
                   <h2 className='text-3xl font-bold my-4'>{card.service}</h2>

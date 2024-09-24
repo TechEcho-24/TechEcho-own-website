@@ -16,15 +16,14 @@ export const About = () => {
         </div>
         <div className='md:basis-1/2 text-white'>
           <p className='my-4 text-xl'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            doloremque quam reprehenderit, sapiente mollitia accusamus
-            exercitationem dolore eum impedit repellat tenetur alias debitis
-            eaque labore culpa recusandae fugit molestiae totam quidem laborum
-            enim, illum magnam, nihil nemo. Quia eos soluta nihil labore fugiat
-            harum illo autem iusto vitae libero, sit quibusdam maiores cum.
-            Obcaecati non explicabo impedit tempora et magni enim voluptatem
-            beatae doloremque sunt laborum, quis blanditiis veritatis in quos
-            totam temporibus.
+            Located in the thriving tech hub of Kanpur, TechEcho boasts a team
+            of experts who bring diverse experiences from various technology
+            sectors. Our team's collective expertise in fields like machine
+            learning, web development, and cloud infrastructure allows us to
+            tackle a broad range of challenges, from product ideation to
+            full-scale digital deployment. We are committed to delivering not
+            just products, but tailored experiences that propel your business
+            forward.
           </p>
           <button className='text-2xl p-4 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]'>
             View More Details
@@ -44,15 +43,12 @@ export const About = () => {
             <img src='/assets/carrierHead.png' alt='' />
           </div>
           <p className='my-4 text-xl'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            doloremque quam reprehenderit, sapiente mollitia accusamus
-            exercitationem dolore eum impedit repellat tenetur alias debitis
-            eaque labore culpa recusandae fugit molestiae totam quidem laborum
-            enim, illum magnam, nihil nemo. Quia eos soluta nihil labore fugiat
-            harum illo autem iusto vitae libero, sit quibusdam maiores cum.
-            Obcaecati non explicabo impedit tempora et magni enim voluptatem
-            beatae doloremque sunt laborum, quis blanditiis veritatis in quos
-            totam temporibus.
+            At TechEcho, our Career Section offers top-tier Full Stack
+            Development and UX/UI Design courses, guided by industry experts in
+            a collaborative and innovative environment. We ensure hands-on
+            learning, access to the best teachers, and a supportive workspace.
+            Upon completion, students receive a certification to validate their
+            skills and kickstart their tech careers.
           </p>
           <button className='text-2xl p-4 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]'>
             Get More Details
@@ -72,15 +68,13 @@ export const About = () => {
             <img src='/assets/founderHead.png' alt='' />
           </div>
           <p className='my-4 text-xl'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            doloremque quam reprehenderit, sapiente mollitia accusamus
-            exercitationem dolore eum impedit repellat tenetur alias debitis
-            eaque labore culpa recusandae fugit molestiae totam quidem laborum
-            enim, illum magnam, nihil nemo. Quia eos soluta nihil labore fugiat
-            harum illo autem iusto vitae libero, sit quibusdam maiores cum.
-            Obcaecati non explicabo impedit tempora et magni enim voluptatem
-            beatae doloremque sunt laborum, quis blanditiis veritatis in quos
-            totam temporibus.
+            At TechEcho, we are at the forefront of innovation, crafting
+            cutting-edge technological solutions tailored to meet the needs of a
+            dynamic and ever-evolving market. Based in Kanpur, Uttar Pradesh,
+            our mission is to leverage advanced technology to simplify complex
+            challenges, helping businesses scale and adapt in a competitive
+            landscape. From software development to AI-driven solutions, we are
+            dedicated to driving progress through tech.
           </p>
           <button className='text-2xl p-4 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]'>
             Learn More
