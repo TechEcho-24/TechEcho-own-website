@@ -4,6 +4,7 @@ import { Stats } from "../layouts/Stats";
 import { Intro } from "../layouts/Intro";
 import { Service } from "../layouts/Service";
 import { About } from "../layouts/About";
+import { Contact } from "../layouts/Contact";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
         <Intro />
         <Service />
         <About />
+        <Contact />
       </div>
     </>
   );
