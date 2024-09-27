@@ -77,27 +77,27 @@ export const Service = () => {
   let selectedCard = data[activeCardIndex];
   return (
     <>
-      <div className="flex justify-center my-20">
-        <img src="/assets/service.png" alt="service" />
+      <div className='flex justify-center my-20'>
+        <img src='/assets/service.png' alt='service' />
       </div>
-      <div className="flex md:flex-row flex-col px-32 my-40 items-center">
-        <div className="text-white basis-1/2">
-          <h1 className="text-4xl font-extrabold my-4">
+      <div className='flex md:flex-row flex-col px-10 md:px-32 my-40 items-center'>
+        <div className='text-white basis-1/2'>
+          <h1 className='text-2xl md:text-4xl font-extrabold my-4'>
             {selectedCard.service}
           </h1>
-          <p className="text-xl">{selectedCard.detail}</p>
-          <button className="text-xl p-2 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]">
-            View More
+          <p className='md:text-xl'>{selectedCard.detail}</p>
+          <button className='btn'>
+            <span className='btn-text'>View More</span>
           </button>
         </div>
-        <div className="w-3/4 relative flex items-center">
-          <button onClick={handlePrevious} className="absolute left-20 z-10">
+        <div className='w-3/4 relative flex items-center'>
+          <button onClick={handlePrevious} className='absolute left-20 z-10'>
             <FontAwesomeIcon
               icon={faChevronLeft}
-              className="text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900"
+              className='text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
             />
           </button>
-          <div className="flex overflow-x-hidden">
+          <div className='flex overflow-x-hidden'>
             {getDisplayedCard().map((card, index) => {
               return (
                 <div
@@ -110,19 +110,19 @@ export const Service = () => {
                     index === 2 ? "rotate-12" : ""
                   }`}
                 >
-                  <h2 className="text-3xl font-bold my-4">{card.service}</h2>
-                  <p className="text-xl py-8">{card.description}</p>
+                  <h2 className='text-3xl font-bold my-4'>{card.service}</h2>
+                  <p className='text-xl py-8'>{card.description}</p>
                   <figure>
-                    <img src={card.image} alt="card" />
+                    <img src={card.image} alt='card' />
                   </figure>
                 </div>
               );
             })}
           </div>
-          <button onClick={handleNext} className="absolute right-20">
+          <button onClick={handleNext} className='absolute right-20'>
             <FontAwesomeIcon
               icon={faChevronRight}
-              className="text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900"
+              className='text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
             />
           </button>
         </div>

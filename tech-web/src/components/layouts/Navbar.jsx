@@ -26,15 +26,17 @@ export const Navbar = () => {
   return (
     // todo: fix the layout in mobile screens
     <div
-      className={`flex justify-between items-center py-6 px-8 fixed container z-40 ${
+      className={`flex justify-between items-center py-6 px-8 fixed z-40 w-full ${
         isScrolled ? "backdrop-blur-3xl" : "bg-transparent"
       }`}
     >
-      <div className='flex items-center' onClick={() => setActivePage("home")}>
-        <img src='/assets/logo.png' alt='' className='w-full' />
-        <span className='md:text-2xl text-xl text-white text-shadow font-semibold mt-1 ml-2'>
-          TechEcho
-        </span>
+      <div onClick={() => setActivePage("home")}>
+        <Link to={"/"} className='flex items-center'>
+          <img src='/assets/logo.png' alt='' className='object-contain' />
+          <span className='md:text-2xl text-xl text-white text-shadow font-semibold mt-1 ml-2'>
+            TechEcho
+          </span>
+        </Link>
       </div>
       <ToggleSidePanel activePage={activePage} setActivePage={setActivePage} />
       <ul className='xl:flex navbar hidden'>
@@ -59,9 +61,9 @@ export const Navbar = () => {
           <Link to={"/services"}>Services</Link>
         </li>
         <li
-          onClick={() => setActivePage("career")}
+          onClick={() => setActivePage("carrier")}
           className={
-            activePage === "career"
+            activePage === "carrier"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }

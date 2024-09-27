@@ -7,7 +7,7 @@ export const About = () => {
         <img src='/assets/aboutHead.png' alt='' />
       </div>
       {/* team  */}
-      <div className='flex md:flex-row flex-col md:mx-32 mx-10 py-10'>
+      <div className='flex md:flex-row flex-col md:mx-32 mx-10 my-4 md:my-10'>
         <div className='md:basis-1/2 flex md:relative'>
           <div className='bg-[#488edf] w-40 h-96 hidden md:block'></div>
           <figure className='md:absolute left-10 top-8 md:w-3/4'>
@@ -15,7 +15,7 @@ export const About = () => {
           </figure>
         </div>
         <div className='md:basis-1/2 text-white'>
-          <p className='my-4 text-xl'>
+          <p className='my-4 md:text-xl'>
             Located in the thriving tech hub of Kanpur, TechEcho boasts a team
             of experts who bring diverse experiences from various technology
             sectors. Our team's collective expertise in fields like machine
@@ -25,8 +25,8 @@ export const About = () => {
             just products, but tailored experiences that propel your business
             forward.
           </p>
-          <button className='text-2xl p-4 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]'>
-            View More Details
+          <button className='btn'>
+            <span className='btn-text'>View More Details</span>
           </button>
         </div>
       </div>
@@ -42,7 +42,7 @@ export const About = () => {
           <div className='flex my-10'>
             <img src='/assets/carrierHead.png' alt='' />
           </div>
-          <p className='my-4 text-xl'>
+          <p className='my-4 md:text-xl'>
             At TechEcho, our Career Section offers top-tier Full Stack
             Development and UX/UI Design courses, guided by industry experts in
             a collaborative and innovative environment. We ensure hands-on
@@ -50,8 +50,8 @@ export const About = () => {
             Upon completion, students receive a certification to validate their
             skills and kickstart their tech careers.
           </p>
-          <button className='text-2xl p-4 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]'>
-            Get More Details
+          <button className='btn'>
+            <span className='btn-text'>Get More Details</span>
           </button>
         </div>
       </div>
@@ -67,7 +67,7 @@ export const About = () => {
           <div className='flex my-10'>
             <img src='/assets/founderHead.png' alt='' />
           </div>
-          <p className='my-4 text-xl'>
+          <p className='my-4 md:text-xl'>
             At TechEcho, we are at the forefront of innovation, crafting
             cutting-edge technological solutions tailored to meet the needs of a
             dynamic and ever-evolving market. Based in Kanpur, Uttar Pradesh,
@@ -76,8 +76,8 @@ export const About = () => {
             landscape. From software development to AI-driven solutions, we are
             dedicated to driving progress through tech.
           </p>
-          <button className='text-2xl p-4 rounded-lg border-4 border-[#488edf] my-16 hover:bg-[#488edf]'>
-            Learn More
+          <button className='btn'>
+            <span className='btn-text'>Learn More</span>
           </button>
         </div>
       </div>

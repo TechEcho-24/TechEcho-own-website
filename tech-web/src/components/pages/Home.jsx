@@ -10,7 +10,7 @@ import { Footer } from "../layouts/Footer";
 export const Home = () => {
   return (
     <>
-      <div className='relative container mx-auto'>
+      <div className='relative'>
         <Hero />
         <Stats />
         <Intro />

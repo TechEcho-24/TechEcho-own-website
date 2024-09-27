@@ -3,7 +3,7 @@
 export const Hero = () => {
   return (
     <div className='flex flex-col md:flex-row justify-between py-10 md:py-20 md:pl-10 px-4'>
-      <div className='my-auto flex flex-col justify-center items-center md:block'>
+      <div className='my-auto flex flex-col justify-center items-center md:block mt-20 md:mt-32'>
         <p className='gradient-text font-bold text-2xl my-4'>
           Design Your Digital Identity
         </p>
@@ -15,8 +15,8 @@ export const Hero = () => {
         <p className='text-base text-center md:text-left text-[#06EFFA]'>
           We are committed towards transforming ideas into tangible solutions
         </p>
-        <button className='text-2xl p-4 bg-gradient-to-r from-[#015698] via-[#0e79cb] to-[#4aa3e8] text-white font-semibold rounded-lg my-6 hover:p-5'>
-          Explore Now
+        <button className='btn text-white'>
+          <span className='btn-text'>Explore Now</span>
         </button>
       </div>
       <figure className='flex flex-col items-center mt-8 md:mt-0'>

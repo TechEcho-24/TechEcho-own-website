@@ -57,3 +57,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn{
+font-size: 1.25rem /* 20px */;
+transform: skew(-30deg);
+position:relative;
+display: inline-block;
+padding: 0.5rem 2rem;
+border-radius: 0.5rem;
+border:4px solid #488edf;
+margin: 2rem 0;
+&:hover{
+  background-color: #488edf;
+}
+}
+.btn-text{
+  display: inline-block;
+  transform: skew(20deg);
+}

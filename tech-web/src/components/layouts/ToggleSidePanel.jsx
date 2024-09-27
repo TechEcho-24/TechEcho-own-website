@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-function ToggleSidePanel() {
+function ToggleSidePanel({ activePage, setActivePage }) {
   let [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -20,23 +20,58 @@ function ToggleSidePanel() {
         } xl:hidden`}
       >
         <ul>
-          <li className='text-gray-500 my-4 active:text-[#488EDF]'>
+          <li
+            className={`my-4 active:text-[#488EDF] pl-8 ${
+              activePage === "about"
+                ? "border-l-4 border-blue-500 text-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActivePage("about")}
+          >
             {" "}
             <Link to='/about'>About Us</Link>
           </li>
-          <li className='text-gray-500 my-4 active:text-[#488EDF]'>
+          <li
+            className={`my-4 active:text-[#488EDF] pl-8 ${
+              activePage === "service"
+                ? "border-l-4 border-blue-500 text-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActivePage("service")}
+          >
             {" "}
             <Link to='/services'>Services</Link>
           </li>
-          <li className='text-gray-500 my-4 active:text-[#488EDF]'>
+          <li
+            className={`my-4 active:text-[#488EDF] pl-8 ${
+              activePage === "carrier"
+                ? "border-l-4 border-blue-500 text-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActivePage("carrier")}
+          >
             {" "}
-            <Link to='/career'>Career</Link>
+            <Link to='/career'>Carrier</Link>
           </li>
-          <li className='text-gray-500 my-4 active:text-[#488EDF]'>
+          <li
+            className={`my-4 active:text-[#488EDF] pl-8 ${
+              activePage === "contact"
+                ? "border-l-4 border-blue-500 text-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActivePage("contact")}
+          >
             {" "}
             <Link to='/contact'>Contact Us</Link>
           </li>
-          <li className='text-gray-500 my-4 active:text-[#488EDF]'>
+          <li
+            className={`my-4 active:text-[#488EDF] pl-8 ${
+              activePage === "login"
+                ? "border-l-4 border-blue-500 text-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActivePage("login")}
+          >
             {" "}
             <Link to='/signIn'>Sign In</Link>
           </li>
