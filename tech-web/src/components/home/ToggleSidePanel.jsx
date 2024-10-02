@@ -73,7 +73,7 @@ function ToggleSidePanel({ activePage, setActivePage }) {
             onClick={() => setActivePage("login")}
           >
             {" "}
-            <Link to='/signIn'>Sign In</Link>
+            <Link to='/login'>Sign In</Link>
           </li>
         </ul>
       </div>

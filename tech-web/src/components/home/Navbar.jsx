@@ -84,7 +84,7 @@ export const Navbar = () => {
           className='border-2 border-[#06EFFA] text-white px-6 py-2 ml-8 text-xl cursor-pointer rounded-md'
           onClick={() => setActivePage("login")}
         >
-          <Link to={"/signIn"}>
+          <Link to={"/login"}>
             {" "}
             <span className='mr-2'>Login</span>
             <FontAwesomeIcon icon={faRightToBracket} />

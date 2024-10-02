@@ -1,14 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar } from "./components/layouts/Navbar";
-import { Stars } from "./components/layouts/Stars";
-import About from "./components/pages/About";
-import Career from "./components/pages/Career";
-import { Home } from "./components/pages/Home";
-import Services from "./components/pages/Services";
-import SignIn from "./components/pages/SignIn";
-import Contact from "./components/pages/Contact";
+import { Navbar } from "./components/home/Navbar";
+import { Stars } from "./components/home/Stars";
+import About from "./pages/About";
+import Career from "./pages/Career";
+import { Home } from "./pages/Home";
+import Services from "./pages/Services";
+import { Login } from "./components/auth/Login";
+import { Signup } from "./components/auth/Signup";
+
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -25,8 +27,8 @@ function App() {
           <Route path='/career' element={<Career />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
-
-          <Route path='/signIn' element={<SignIn />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
         </Routes>
       </div>
     </div>
