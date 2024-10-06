@@ -12,6 +12,7 @@ import { Signup } from "./components/auth/Signup";
 
 import Contact from "./pages/Contact";
 import { Footer } from "./components/home/Footer";
+import { FloatingActionButton } from "./components/home/FloatingActionButton";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
         </Routes>
-<Footer/>
+        <Footer />
+        <FloatingActionButton />
       </div>
     </div>
   );

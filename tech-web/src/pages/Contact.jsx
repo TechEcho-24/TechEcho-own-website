@@ -3,7 +3,9 @@ import React from "react";
 function Contact() {
   return (
     <div>
-      <h1>contact</h1>
+      <figure>
+        <img src='/assets/contact.png' alt='contact' />
+      </figure>
     </div>
   );
 }
