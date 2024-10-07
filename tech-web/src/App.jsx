@@ -13,6 +13,7 @@ import { Signup } from "./components/auth/Signup";
 import Contact from "./pages/Contact";
 import { Footer } from "./components/home/Footer";
 import { FloatingActionButton } from "./components/home/FloatingActionButton";
+import ScrollToTop from "./components/Scrolltop";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       {/* Main content */}
       <div className='relative inset-0'>
         <Navbar />
+        <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

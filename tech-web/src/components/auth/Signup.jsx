@@ -11,11 +11,11 @@ export const Signup = () => {
   return (
     <div className="w-4/5 h-[80%] mx-auto  pt-24  ">
       <div className="flex items-center justify-center backdrop-blur-lg bg-black">
-        <div className="hidden md:flex md:w-1/2 bg-gray-800">
+        <div className="hidden md:flex md:w-1/2 ">
           <img
             src="/assets/signup.jpeg"
             alt="Signup Aside"
-            className="object-cover w-full "
+            className="object-cover w-[80%] h-[70%]"
           />
         </div>
         {/* Signup Form Section */}

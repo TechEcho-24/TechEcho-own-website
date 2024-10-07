@@ -65,7 +65,7 @@ export const Login = () => {
               </span>
               <hr className="my-5 border-blue-400" />
             </div>
-            <button className="p-2 rounded-lg  border-4 border-blue-500 w-full justify-center text-white flex items-center hover:bg-gray-500">
+            <button className="p-2 rounded-lg  border-2 border-blue-500 w-full justify-center text-white flex items-center hover:bg-blue-400 hover:border-none">
               <img src="/assets/google.png" alt="google" className="h-8 mr-4" />
               Log In with google
             </button>
@@ -78,11 +78,11 @@ export const Login = () => {
           </p>
         </div>
         {/* Image Section */}
-        <div className="hidden md:flex md:w-1/2 bg-gray-800">
+        <div className="hidden md:flex md:w-1/2">
           <img
             src="/assets/signup.jpeg"
             alt="Signup Aside"
-            className="object-cover w-full h-full"
+            className="object-cover w-[80%] h-[70%]"
           />
         </div>
       </div>

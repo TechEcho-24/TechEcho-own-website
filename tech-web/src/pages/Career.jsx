@@ -1,4 +1,3 @@
-import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -11,8 +10,8 @@ function Career() {
     });
   });
   return (
-    <div className='h-screen flex justify-center items-center'>
-      <h1 className='text-8xl text-white'>coming soon.....</h1>
+    <div className="h-screen flex justify-center items-center">
+      <h1 className="text-8xl text-white">Coming Soon...</h1>
     </div>
   );
 }
