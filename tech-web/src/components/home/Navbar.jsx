@@ -1,13 +1,29 @@
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ToggleSidePanel from "./ToggleSidePanel";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export const Navbar = () => {
   let [activePage, setActivePage] = useState("home");
   let [isScrolled, setIsScrolled] = useState("false");
+  let location = useLocation();
 
+  useGSAP(() => {
+    gsap.from("li", {
+      y: -50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: 0.1,
+    });
+  });
+
+  useEffect(() => {
+    let path = location.pathname.split("/")[1];
+    setActivePage(path);
+  }, [location]);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 5) {
@@ -58,12 +74,12 @@ export const Navbar = () => {
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
         >
-          <Link to={"/services"}>Services</Link>
+          <Link to={"/service"}>Services</Link>
         </li>
         <li
           onClick={() => setActivePage("carrier")}
           className={
-            activePage === "carrier"
+            activePage === "career"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
@@ -78,10 +94,22 @@ export const Navbar = () => {
               : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
           }
         >
-          <Link to={"/about"}>Contact Us</Link>
+          <Link to={"/contact"}>Contact Us</Link>
+        </li>
+        <li
+          onClick={() => setActivePage("help")}
+          className={
+            activePage === "help"
+              ? "active cursor-pointer text-white ml-8 text-xl py-2"
+              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
+          }
+        >
+          <Link to={"/help"}>Help</Link>
         </li>
         <button
-          className='border-2 border-[#06EFFA] text-white px-6 py-2 ml-8 text-xl cursor-pointer rounded-md'
+          className={`border-2 border-[#06EFFA] text-white px-6 py-2 ml-8 text-xl cursor-pointer rounded-md ${
+            activePage === "login" ? "bg-blue-500 border-none" : ""
+          }`}
           onClick={() => setActivePage("login")}
         >
           <Link to={"/login"}>

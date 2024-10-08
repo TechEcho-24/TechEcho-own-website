@@ -50,7 +50,7 @@ export const Service = () => {
   const handleNext = () => {
     setTimeout(
       setActiveCardIndex(
-        (prevIndex) => (prevIndex + 1 + data.length) % data.length
+        (prevIndex) => (prevIndex - 1 + data.length) % data.length
       ),
       1000
     );
@@ -59,7 +59,7 @@ export const Service = () => {
   const handlePrevious = () => {
     setTimeout(
       setActiveCardIndex(
-        (prevIndex) => (prevIndex - 1 + data.length) % data.length
+        (prevIndex) => (prevIndex + 1 + data.length) % data.length
       ),
       1000
     );
@@ -90,8 +90,11 @@ export const Service = () => {
             <span className='btn-text'>View More</span>
           </button>
         </div>
-        <div className='w-3/4 relative flex items-center'>
-          <button onClick={handlePrevious} className='absolute left-20 z-10'>
+        <div className='w-full md:w-3/4 relative flex items-center justify-center'>
+          <button
+            onClick={handlePrevious}
+            className='absolute left-0 md:left-20 z-50'
+          >
             <FontAwesomeIcon
               icon={faChevronLeft}
               className='text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
@@ -102,24 +105,33 @@ export const Service = () => {
               return (
                 <div
                   key={card.service}
-                  className={`text-white p-8 rounded-lg bg-[#3F3D56] w-[25rem] h-[38rem] transition duration-1000 ease-in-out ${
+                  className={`text-white p-8 rounded-lg bg-[#3F3D56] w-[15rem] h-[27rem] md:w-[25rem] md:h-[38rem] transition duration-1000 ease-in-out ${
                     index === 1
-                      ? "absolute left-52 z-30"
+                      ? "absolute left-1/3 z-30"
                       : "opacity-40 scale-75"
                   } ${index === 0 ? "-rotate-12" : ""}  ${
                     index === 2 ? "rotate-12" : ""
                   }`}
                 >
-                  <h2 className='text-3xl font-bold my-4'>{card.service}</h2>
-                  <p className='text-xl py-8'>{card.description}</p>
+                  <h2 className='md:text-3xl text-xl font-bold my-4'>
+                    {card.service}
+                  </h2>
+                  <p className='md:text-xl text-sm py-8'>{card.description}</p>
                   <figure>
-                    <img src={card.image} alt='card' />
+                    <img
+                      src={card.image}
+                      alt='card'
+                      className='object-contain'
+                    />
                   </figure>
                 </div>
               );
             })}
           </div>
-          <button onClick={handleNext} className='absolute right-20'>
+          <button
+            onClick={handleNext}
+            className='absolute right-0 md:right-20 z-50'
+          >
             <FontAwesomeIcon
               icon={faChevronRight}
               className='text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'

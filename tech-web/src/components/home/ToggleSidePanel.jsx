@@ -26,7 +26,10 @@ function ToggleSidePanel({ activePage, setActivePage }) {
                 ? "border-l-4 border-blue-500 text-blue-500"
                 : "text-gray-500"
             }`}
-            onClick={() => setActivePage("about")}
+            onClick={() => {
+              setActivePage("about");
+              setIsOpen(false);
+            }}
           >
             {" "}
             <Link to='/about'>About Us</Link>
@@ -37,21 +40,27 @@ function ToggleSidePanel({ activePage, setActivePage }) {
                 ? "border-l-4 border-blue-500 text-blue-500"
                 : "text-gray-500"
             }`}
-            onClick={() => setActivePage("service")}
+            onClick={() => {
+              setActivePage("service");
+              setIsOpen(false);
+            }}
           >
             {" "}
-            <Link to='/services'>Services</Link>
+            <Link to='/service'>Services</Link>
           </li>
           <li
             className={`my-4 active:text-[#488EDF] pl-8 ${
-              activePage === "carrier"
+              activePage === "career"
                 ? "border-l-4 border-blue-500 text-blue-500"
                 : "text-gray-500"
             }`}
-            onClick={() => setActivePage("carrier")}
+            onClick={() => {
+              setActivePage("career");
+              setIsOpen(false);
+            }}
           >
             {" "}
-            <Link to='/career'>Carrier</Link>
+            <Link to='/career'>Career</Link>
           </li>
           <li
             className={`my-4 active:text-[#488EDF] pl-8 ${
@@ -59,10 +68,27 @@ function ToggleSidePanel({ activePage, setActivePage }) {
                 ? "border-l-4 border-blue-500 text-blue-500"
                 : "text-gray-500"
             }`}
-            onClick={() => setActivePage("contact")}
+            onClick={() => {
+              setActivePage("contact");
+              setIsOpen(false);
+            }}
           >
             {" "}
             <Link to='/contact'>Contact Us</Link>
+          </li>
+          <li
+            className={`my-4 active:text-[#488EDF] pl-8 ${
+              activePage === "help"
+                ? "border-l-4 border-blue-500 text-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => {
+              setActivePage("help");
+              setIsOpen(false);
+            }}
+          >
+            {" "}
+            <Link to='/help'>Help</Link>
           </li>
           <li
             className={`my-4 active:text-[#488EDF] pl-8 ${
@@ -70,7 +96,10 @@ function ToggleSidePanel({ activePage, setActivePage }) {
                 ? "border-l-4 border-blue-500 text-blue-500"
                 : "text-gray-500"
             }`}
-            onClick={() => setActivePage("login")}
+            onClick={() => {
+              setActivePage("login");
+              setIsOpen(false);
+            }}
           >
             {" "}
             <Link to='/login'>Sign In</Link>

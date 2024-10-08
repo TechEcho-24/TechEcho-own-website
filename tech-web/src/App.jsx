@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import { Footer } from "./components/home/Footer";
 import { FloatingActionButton } from "./components/home/FloatingActionButton";
 import ScrollToTop from "./components/Scrolltop";
+import { Help } from "./pages/Help";
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
       {/* Main content */}
       <div className='relative inset-0'>
         <Navbar />
-        <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/career' element={<Career />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/service' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/help' element={<Help />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
         </Routes>

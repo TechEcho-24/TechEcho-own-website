@@ -1,4 +1,4 @@
-export const Contact = () => {
+export const ContactForm = () => {
   return (
     <>
       <div className='flex justify-center my-20'>
