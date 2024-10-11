@@ -12,41 +12,42 @@ import {
   faLocationDot,
   // faVoicemail,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
     <>
-      <footer className="bg-gradient-to-b from-[#131b46] to-[#2c507b] text-white py-8 mt-32">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <footer className='bg-gradient-to-b from-[#131b46] to-[#2c507b] text-white py-8 mt-32'>
+        <div className='container mx-auto px-4'>
+          <div className='grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-0'>
             {/* Column 1 */}
             <div>
-              <figure className="mb-4 w-24">
+              <figure className='mb-4 w-24'>
                 <img
-                  src="/assets/footerLogo.png"
-                  alt="logo"
-                  className="w-3/4"
+                  src='/assets/footerLogo.png'
+                  alt='logo'
+                  className='w-3/4'
                 />
               </figure>
-              <p className="text-md w-3/5">
+              <p className='text-md w-3/5'>
                 Building the Future, Powered by Technology.
               </p>
-              <div className="flex justify-between w-44 text-4xl my-8">
+              <div className='flex justify-between w-44 text-4xl my-8'>
                 <a
-                  href="linkedin.com"
-                  className="hover:bg-blue-500 p-2 rounded-lg"
+                  href='linkedin.com'
+                  className='hover:bg-blue-500 p-2 rounded-lg'
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
                 <a
-                  href="google.com"
-                  className="hover:bg-gradient-to-tr from-purple-600 via-red-600 to-yellow-400 rounded-lg p-2"
+                  href='google.com'
+                  className='hover:bg-gradient-to-tr from-purple-600 via-red-600 to-yellow-400 rounded-lg p-2'
                 >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <a
-                  href="linkedin.com"
-                  className="hover:bg-black p-2 rounded-lg"
+                  href='linkedin.com'
+                  className='hover:bg-black p-2 rounded-lg'
                 >
                   <FontAwesomeIcon icon={faXTwitter} />
                 </a>
@@ -55,106 +56,111 @@ export const Footer = () => {
 
             {/* Column 2 */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 mt-14 text-blue-500">
+              <h3 className='text-lg font-semibold mb-4 mt-14 text-blue-500'>
                 Quick Links
               </h3>
               <ul>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <Link to={"/"} className='hover:underline'>
                     Home
-                  </a>
+                  </Link>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <Link to={"/service"} className='hover:underline'>
                     Services
-                  </a>
+                  </Link>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <Link to={"/contact"} className='hover:underline'>
                     Contact
-                  </a>
+                  </Link>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
-                    Carrier
-                  </a>
+                <li className='mb-2'>
+                  <Link to={"/career"} className='hover:underline'>
+                    Career
+                  </Link>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <Link to={"/about"} className='hover:underline'>
                     About
-                  </a>
+                  </Link>
+                </li>
+                <li className='mb-2'>
+                  <Link to={"/help"} className='hover:underline'>
+                    Help & Support
+                  </Link>
                 </li>
               </ul>
             </div>
 
             {/* Column 3 */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 mt-14 text-blue-500">
+              <h3 className='text-lg font-semibold mb-4 mt-14 text-blue-500'>
                 Services
               </h3>
               <ul>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <a href='#' className='hover:underline'>
                     Website Development
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <a href='#' className='hover:underline'>
                     App Development
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <a href='#' className='hover:underline'>
                     AI Development
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <a href='#' className='hover:underline'>
                     Chatbot Development
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline">
+                <li className='mb-2'>
+                  <a href='#' className='hover:underline'>
                     Marketing
                   </a>
                 </li>
               </ul>
             </div>
 
-            {/* Column 3 */}
+            {/* Column 4 */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 mt-14 text-blue-500">
+              <h3 className='text-lg font-semibold mb-4 mt-14 text-blue-500'>
                 Contact
               </h3>
               <ul>
-                <li className="mb-2">
+                <li className='mb-2'>
                   <a
-                    href="tel:+918318999388"
-                    className="hover:underline"
-                    target="blank"
+                    href='tel:+918318999388'
+                    className='hover:underline'
+                    target='blank'
                   >
                     <FontAwesomeIcon
                       icon={faPhone}
-                      className="mr-2 text-green-500"
+                      className='mr-2 text-green-500'
                     />
                     +91-8318999388
                   </a>
                 </li>
-                <li className="mb-2">
+                <li className='mb-2'>
                   <a
-                    href="mailto:techecho.kanpur@gmail.com"
-                    className="hover:underline"
+                    href='mailto:techecho.kanpur@gmail.com'
+                    className='hover:underline'
                   >
-                    <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                    <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
                     techecho.kanpur@gmail.com
                   </a>
                 </li>
-                <li className="mb-2">
+                <li className='mb-2'>
                   <p>
-                    <span className="text-xl">
+                    <span className='text-xl'>
                       <FontAwesomeIcon
                         icon={faLocationDot}
-                        className="text-red-500"
+                        className='text-red-500'
                       />
                     </span>{" "}
                     : Phase 3rd, Lig 41, Tatya Tope Nagar, Kanpur, Uttar Pradesh
@@ -163,12 +169,12 @@ export const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://maps.app.goo.gl/7hJe2Sb87jv7MgtP9"
-                    target="blank"
+                    href='https://maps.app.goo.gl/7hJe2Sb87jv7MgtP9'
+                    target='blank'
                   >
                     <FontAwesomeIcon
                       icon={faLocation}
-                      className="mr-2 text-red-400"
+                      className='mr-2 text-red-400'
                     />
                     View on map
                   </a>
@@ -178,7 +184,7 @@ export const Footer = () => {
           </div>
 
           {/* Footer Bottom */}
-          <div className="mt-8 text-center border-t border-gray-700 pt-4">
+          <div className='mt-8 text-center border-t border-gray-700 pt-4'>
             <p>
               &copy; {new Date().getFullYear()} TechEcho All rights reserved.
             </p>

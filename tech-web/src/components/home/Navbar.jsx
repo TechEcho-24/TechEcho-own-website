@@ -61,7 +61,7 @@ export const Navbar = () => {
           className={
             activePage === "about"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
-              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
+              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1  hover:border-b-4 border-b-[#06EFFA]"
           }
         >
           <Link to={"/about"}>About Us</Link>
@@ -71,7 +71,7 @@ export const Navbar = () => {
           className={
             activePage === "service"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
-              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
+              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1  hover:border-b-4 border-b-[#06EFFA]"
           }
         >
           <Link to={"/service"}>Services</Link>
@@ -81,7 +81,7 @@ export const Navbar = () => {
           className={
             activePage === "career"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
-              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
+              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1  hover:border-b-4 border-b-[#06EFFA]"
           }
         >
           <Link to={"/career"}>Career</Link>
@@ -91,23 +91,13 @@ export const Navbar = () => {
           className={
             activePage === "contact"
               ? "active cursor-pointer text-white ml-8 text-xl py-2"
-              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
+              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1  hover:border-b-4 border-b-[#06EFFA]"
           }
         >
           <Link to={"/contact"}>Contact Us</Link>
         </li>
-        <li
-          onClick={() => setActivePage("help")}
-          className={
-            activePage === "help"
-              ? "active cursor-pointer text-white ml-8 text-xl py-2"
-              : "cursor-pointer text-white ml-8 text-xl py-2 mt-1"
-          }
-        >
-          <Link to={"/help"}>Help</Link>
-        </li>
         <button
-          className={`border-2 border-[#06EFFA] text-white px-6 py-2 ml-8 text-xl cursor-pointer rounded-md ${
+          className={`border-2 border-blue-500 text-white px-6 py-2 ml-8 text-xl hover:bg-blue-500 cursor-pointer rounded-md ${
             activePage === "login" ? "bg-blue-500 border-none" : ""
           }`}
           onClick={() => setActivePage("login")}

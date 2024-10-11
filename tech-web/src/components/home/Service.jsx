@@ -77,10 +77,10 @@ export const Service = () => {
   let selectedCard = data[activeCardIndex];
   return (
     <>
-      <div className='flex justify-center my-20'>
+      <div className='flex justify-center mt-20 md:my-20'>
         <img src='/assets/service.png' alt='service' />
       </div>
-      <div className='flex md:flex-row flex-col px-10 md:px-32 my-40 items-center'>
+      <div className='flex xl:flex-row flex-col px-10 md:px-32 my-20 md:my-40 items-center'>
         <div className='text-white basis-1/2'>
           <h1 className='text-2xl md:text-4xl font-extrabold my-4'>
             {selectedCard.service}
@@ -90,14 +90,14 @@ export const Service = () => {
             <span className='btn-text'>View More</span>
           </button>
         </div>
-        <div className='w-full md:w-3/4 relative flex items-center justify-center'>
+        <div className='w-full xl:w-3/4 relative flex items-center justify-center'>
           <button
             onClick={handlePrevious}
             className='absolute left-0 md:left-20 z-50'
           >
             <FontAwesomeIcon
               icon={faChevronLeft}
-              className='text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
+              className='text-white text-xl md:text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
             />
           </button>
           <div className='flex overflow-x-hidden'>
@@ -105,9 +105,9 @@ export const Service = () => {
               return (
                 <div
                   key={card.service}
-                  className={`text-white p-8 rounded-lg bg-[#3F3D56] w-[15rem] h-[27rem] md:w-[25rem] md:h-[38rem] transition duration-1000 ease-in-out ${
+                  className={`text-white p-3 rounded-lg bg-[#3F3D56] w-[10rem] h-[22rem] md:w-[25rem] md:h-[38rem] transition duration-1000 ease-in-out ${
                     index === 1
-                      ? "absolute left-1/3 z-30"
+                      ? "absolute left-[22%] 2xl:left-[40%] md:left-[10%] xl:left-[30%] z-30"
                       : "opacity-40 scale-75"
                   } ${index === 0 ? "-rotate-12" : ""}  ${
                     index === 2 ? "rotate-12" : ""
@@ -121,7 +121,7 @@ export const Service = () => {
                     <img
                       src={card.image}
                       alt='card'
-                      className='object-contain'
+                      className='object-contain h-1/2'
                     />
                   </figure>
                 </div>
@@ -134,7 +134,7 @@ export const Service = () => {
           >
             <FontAwesomeIcon
               icon={faChevronRight}
-              className='text-white text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
+              className='text-white text-xl md:text-3xl border rounded-full px-4 p-2 bg-slate-500 hover:bg-slate-900'
             />
           </button>
         </div>
