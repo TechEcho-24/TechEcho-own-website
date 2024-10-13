@@ -75,3 +75,33 @@ margin: 2rem 0;
   display: inline-block;
   transform: skew(20deg);
 }
+
+.animated-shadow-box {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  margin: 50px auto;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  /* Set animation */
+  animation: shadowPulse 2s infinite ease-in-out;
+}
+
+/* Define keyframes for shadow animation */
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 4px 8px rgba(21, 41, 226, 0.685);
+  }
+  50% {
+    box-shadow: 0 12px 24px rgba(25, 188, 225, 0.796);
+  }
+  100% {
+    box-shadow: 0 4px 8px rgba(22, 110, 226, 0.808);
+  }
+}
+
+.animated-shadow-box:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
+}

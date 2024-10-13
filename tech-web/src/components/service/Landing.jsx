@@ -3,7 +3,7 @@ import React from "react";
 export const Landing = () => {
   return (
     <>
-      <div className='text-white pt-40 flex flex-col md:flex-row items-center justify-center gap-10'>
+      <div className='text-white pt-20 md:pt-40 flex flex-col md:flex-row items-center justify-center gap-10'>
         <div className='basis-1/2'>
           <h3 className='text-2xl font-bold my-6'>
             Innovate now for a better{" "}
