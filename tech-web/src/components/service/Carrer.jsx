@@ -18,7 +18,7 @@ export const Carrer = () => {
       <figure className='flex justify-center items-center'>
         <img src='/assets/carrierHead.png' alt='career' />
       </figure>
-      <h2 className='text-white text-7xl text-center mt-20 font-extrabold'>
+      <h2 className='text-white text-2xl md:text-7xl text-center mt-20 font-extrabold'>
         Coming Soon...
       </h2>
     </div>

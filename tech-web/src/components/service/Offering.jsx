@@ -5,8 +5,8 @@ export const Offering = () => {
   //   let [activeBox, setActiveBox] = useState(null);
   const containerRefs = useRef([]); // To store refs for each container
   const imageRefs = useRef([]); // To store refs for each image
-  const divRef = useRef();
   const [visibleImages, setVisibleImages] = useState({});
+  const [hideService, setHideService] = useState(null);
 
   let data = [
     {
@@ -100,14 +100,14 @@ export const Offering = () => {
 
   return (
     <>
-      <div className='flex text-white items-center mt-10 justify-between'>
-        <div className='basis-2/5 text-5xl font-bold leading-relaxed capitalize'>
+      <div className='flex flex-col md:flex-row text-white md:items-center mt-10 justify-between'>
+        <div className='md:basis-2/5 text-3xl md:text-5xl font-bold leading-relaxed capitalize'>
           <h2>
             what <span className='text-blue-500'>Services</span>
           </h2>
           <h2>We're offering</h2>
         </div>
-        <p className='basis-2/3'>
+        <p className='basis-2/3 mt-4'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
           eligendi nisi dicta, odit sunt, ipsum recusandae voluptatem
           voluptatibus soluta similique omnis id quidem quod quasi quam
@@ -115,12 +115,13 @@ export const Offering = () => {
           quisquam quae sunt.
         </p>
       </div>
-      <ul className='text-gray-400 mt-32'>
+      <ul className='text-gray-400 mt-20 md:mt-32'>
         {data.map((info, index) => {
           return (
             <li
+              key={index}
               ref={(el) => (containerRefs.current[index] = el)}
-              className='py-6 hover:text-white relative hover:text-4xl hover:p-4'
+              className='py-6 hover:text-white relative hover:p-4'
               onMouseMove={(e) => handleMouseMove(e, index)}
               onMouseEnter={() =>
                 setVisibleImages((prev) => ({ ...prev, [index]: true }))
@@ -128,27 +129,44 @@ export const Offering = () => {
               onMouseLeave={() =>
                 setVisibleImages((prev) => ({ ...prev, [index]: false }))
               }
+              onClick={() =>
+                setHideService((prev) => (prev === index ? null : index))
+              }
             >
-              <div className='flex justify-between items-center'>
-                <h3 className='text-3xl font-bold basis-1/4'>{info.service}</h3>
-                <p className='w-2/5 text-xl'>{info.description}</p>
+              <div
+                className={`flex justify-between items-center relative ${
+                  hideService === index ? " flex-col" : ""
+                }`}
+              >
+                <h3 className='md:text-3xl text-xl font-bold md:basis-1/4 hover:text-blue-500'>
+                  {info.service}
+                </h3>
+                <p
+                  className={`w-full mt-3 md:w-2/5 text-sm md:text-xl ${
+                    hideService === index ? "" : "hidden md:block"
+                  }`}
+                >
+                  {info.description}
+                </p>
                 <img
                   src='/assets/service/arrow.png'
                   alt=''
-                  className='object-contain mr-6'
+                  className={`object-contain w-8 md:w-14 mr-6 ${
+                    hideService === index ? "hidden md:block" : ""
+                  }`}
                 />
               </div>
 
               <div
                 ref={(el) => (imageRefs.current[index] = el)}
-                className={`absolute top-0 w-10 h-10 rounded-full transition-opacity duration-300 ${
+                className={`md:absolute top-0 w-10 h-10 rounded-full transition-opacity duration-300 hidden md:block ${
                   visibleImages[index] ? "opacity-100" : "opacity-0"
                 }`}
               >
                 <img
                   src={info.image}
                   alt='star'
-                  className='max-w-96 object-contain'
+                  className={`max-w-96 object-contain`}
                 />
               </div>
               <hr className='mt-6' />

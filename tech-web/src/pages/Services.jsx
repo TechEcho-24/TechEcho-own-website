@@ -5,7 +5,7 @@ import { Carrer } from "../components/service/Carrer";
 
 function Services() {
   return (
-    <div className='px-20'>
+    <div className='px-10 md:px-20'>
       <Landing />
       <Offering />
       <Carrer />
