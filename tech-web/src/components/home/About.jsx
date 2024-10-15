@@ -7,7 +7,7 @@ export const About = () => {
       {/* team  */}
       <div className='flex md:flex-row flex-col md:mx-32 mx-10 my-4 md:my-10'>
         <div className='md:basis-1/2 flex md:relative'>
-          <div className='bg-[#488edf] w-40 h-96 hidden md:block'></div>
+          <div className='bg-[#488edf] w-40 h-48 hidden md:block md:w-[8rem] md:h-46'></div>
           <figure className='md:relative -left-20 top-11 md:w-3/4'>
             <img src='/assets/team.png' alt='team' className='w-full' />
           </figure>
@@ -31,10 +31,10 @@ export const About = () => {
       {/* carrier  */}
       <div className='flex md:flex-row-reverse flex-col md:mx-32 mx-10 mt-20 items-center'>
         <div className='md:basis-1/2 flex'>
-          <figure className='md:relative -right-28 top-11 md:w-3/4'>
+          <figure className='md:relative -right-24 top-8 md:w-3/4'>
             <img src='/assets/carrier.png' alt='team' className='w-full' />
           </figure>
-          <div className='bg-[#488edf] w-40 h-96 hidden md:block'></div>
+          <div className='bg-[#488edf] w-40 h-48 hidden md:block md:w-[8rem] md:h-46'></div>
         </div>
         <div className='md:basis-1/2 text-white'>
           <div className='flex my-10'>
@@ -56,7 +56,7 @@ export const About = () => {
       {/* founder  */}
       <div className='flex md:flex-row flex-col md:mx-32 mx-10 py-5 items-center'>
         <div className='md:basis-1/2 flex md:relative'>
-          <div className='bg-[#488edf] w-40 h-96 hidden md:block'></div>
+          <div className='bg-[#488edf] md:w-[8rem] md:h-46 w-40 h-48 hidden md:block'></div>
           <figure className='md:relative -left-20 top-11 md:w-3/4'>
             <img src='/assets/founder.png' alt='team' className='w-full' />
           </figure>

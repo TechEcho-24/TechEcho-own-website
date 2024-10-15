@@ -2,7 +2,7 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
-  faYoutube
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import { faBrain, faCrosshairs, faX } from "@fortawesome/free-solid-svg-icons";
@@ -19,19 +19,19 @@ let serviceData = [
   },
   {
     title: "UI/UX Design",
-    img: "/assets/about/web-dev.png",
+    img: "/assets/about/design.png",
   },
   {
     title: "Digital Marketing",
-    img: "/assets/about/app-dev.png",
+    img: "/assets/about/marketing.png",
   },
   {
     title: "E-commerce Solutions",
-    img: "/assets/about/web-dev.png",
+    img: "/assets/about/e-commerce.png",
   },
   {
     title: "SEO Services",
-    img: "/assets/about/app-dev.png",
+    img: "/assets/about/seo.png",
   },
 ];
 
@@ -130,37 +130,36 @@ function About() {
       </div>
 
       {/* connect  */}
-      <div className="flex justify-center items-center">
-      <div className='flex flex-col text-white bg-blue-500 py-6 md:flex-row md:justify-between px-6 md:px-10'>
-        <div className='text-lg mr-32'>
-          <h2>Stay connected with us on </h2>
-          <h2 className='mt-2'> Social Media</h2>
-        </div>
-        <div className='text-white my-4'>
-          <FontAwesomeIcon
-            icon={faX}
-            className='border-2 border-white rounded-full py-2 px-[11px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
-          />
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className='border-2 border-white rounded-full py-2 px-[10px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
-          />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className='border-2 border-white rounded-full py-2 px-[10px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
-          />
-          <FontAwesomeIcon
-            icon={faYoutube}
-            className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
-          />
+      <div className='flex justify-center items-center'>
+        <div className='flex flex-col text-white bg-blue-500 py-6 md:flex-row md:justify-between px-6 md:px-10'>
+          <div className='text-lg mr-32'>
+            <h2>Stay connected with us on </h2>
+            <h2 className='mt-2'> Social Media</h2>
+          </div>
+          <div className='text-white my-4'>
+            <FontAwesomeIcon
+              icon={faX}
+              className='border-2 border-white rounded-full py-2 px-[11px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            />
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className='border-2 border-white rounded-full py-2 px-[10px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className='border-2 border-white rounded-full py-2 px-[10px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            />
+            <FontAwesomeIcon
+              icon={faYoutube}
+              className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            />
+          </div>
         </div>
       </div>
-      </div>
-     
     </>
   );
 }
