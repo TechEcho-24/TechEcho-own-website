@@ -2,8 +2,7 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
-  faTwitter,
-  faYoutube,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import { faBrain, faCrosshairs, faX } from "@fortawesome/free-solid-svg-icons";
@@ -54,11 +53,11 @@ function About() {
           />
         </div>
         <div className='basis-1/2 text-white'>
-          <p className='text-white my-2 md:text-xl'>About Us</p>
+          <p className='text-white my-2 md:text-3xl'>About Us</p>
           <h2 className='text-2xl my-2 text-blue-500 font-bold md:text-5xl md:my-4'>
             Our Journey of Innovation and Expertise
           </h2>
-          <p className='md:text-xl md:leading-10'>
+          <p className='md:text-lg md:leading-8'>
             Since our inception, we've been at the forefront of delivering
             cutting-edge solutions that shape the digital landscape. With [X
             years] of experience in [mention industry or field, e.g., software
@@ -118,7 +117,7 @@ function About() {
           maxime amet, neque nesciunt velit, deserunt quas minus aperiam debitis
           explicabo.
         </p>
-        <div className='grid grid-cols-2 md:grid-cols-3 justify-center gap-2'>
+        <div className='grid grid-cols-2 md:grid-cols-3 justify-center md:gap-2 gap-1'>
           {serviceData.map((data, index) => {
             return (
               <div key={index} className='text-center animated-shadow-box'>
@@ -131,15 +130,16 @@ function About() {
       </div>
 
       {/* connect  */}
-      <div className='flex flex-col text-white bg-blue-500 py-6 md:flex-row md:justify-between px-10 md:px-20'>
-        <div className='text-2xl'>
+      <div className="flex justify-center items-center">
+      <div className='flex flex-col text-white bg-blue-500 py-6 md:flex-row md:justify-between px-6 md:px-10'>
+        <div className='text-lg mr-32'>
           <h2>Stay connected with us on </h2>
           <h2 className='mt-2'> Social Media</h2>
         </div>
         <div className='text-white my-4'>
           <FontAwesomeIcon
             icon={faX}
-            className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            className='border-2 border-white rounded-full py-2 px-[11px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
           />
           <FontAwesomeIcon
             icon={faFacebook}
@@ -147,11 +147,11 @@ function About() {
           />
           <FontAwesomeIcon
             icon={faInstagram}
-            className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            className='border-2 border-white rounded-full py-2 px-[10px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
           />
           <FontAwesomeIcon
             icon={faLinkedin}
-            className='border-2 border-white rounded-full p-2 mr-4 hover:bg-white hover:text-blue-700 text-2xl'
+            className='border-2 border-white rounded-full py-2 px-[10px] mr-4 hover:bg-white hover:text-blue-700 text-2xl'
           />
           <FontAwesomeIcon
             icon={faYoutube}
@@ -159,6 +159,8 @@ function About() {
           />
         </div>
       </div>
+      </div>
+     
     </>
   );
 }
