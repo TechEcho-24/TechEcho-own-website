@@ -15,6 +15,7 @@ import { Footer } from "./components/home/Footer";
 import { FloatingActionButton } from "./components/home/FloatingActionButton";
 import ScrollToTop from "./components/Scrolltop";
 import { Help } from "./pages/Help";
+import { Development } from "./components/career/development";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/career' element={<Career />} />
+          <Route path='/career/web-dev' element={<Development />} />
           <Route path='/service' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/help' element={<Help />} />

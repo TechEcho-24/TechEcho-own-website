@@ -80,7 +80,7 @@ export const Service = () => {
       <div className='flex justify-center mt-20 md:my-20'>
         <img src='/assets/service.png' alt='service' />
       </div>
-      <div className='flex xl:flex-row flex-col px-10 md:px-32 my-20 md:my-40 items-center'>
+      <div className='flex xl:flex-row flex-col-reverse px-10 md:px-32 my-20 md:my-40 items-center'>
         <div className='text-white basis-1/2'>
           <h1 className='text-2xl md:text-4xl font-extrabold my-4'>
             {selectedCard.service}
@@ -105,7 +105,7 @@ export const Service = () => {
               return (
                 <div
                   key={card.service}
-                  className={`text-white p-3 rounded-lg bg-[#3F3D56] w-[10rem] h-[22rem] md:w-[25rem] md:h-[38rem] transition duration-1000 ease-in-out ${
+                  className={`text-white p-4 md:p-3 rounded-lg bg-[#3F3D56] w-[10rem] h-[22rem] md:w-[25rem] md:h-[38rem] transition duration-1000 ease-in-out ${
                     index === 1
                       ? "absolute left-[22%] 2xl:left-[40%] md:left-[10%] xl:left-[30%] z-30"
                       : "opacity-40 scale-75"
@@ -113,10 +113,12 @@ export const Service = () => {
                     index === 2 ? "rotate-12" : ""
                   }`}
                 >
-                  <h2 className='md:text-3xl text-xl font-bold my-4'>
+                  <h2 className='md:text-3xl text-xl font-bold my-2 md:my-4'>
                     {card.service}
                   </h2>
-                  <p className='md:text-xl text-sm py-8'>{card.description}</p>
+                  <p className='md:text-xl text-sm py-2 md:py-8'>
+                    {card.description}
+                  </p>
                   <figure>
                     <img
                       src={card.image}
