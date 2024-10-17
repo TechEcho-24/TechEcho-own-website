@@ -58,7 +58,7 @@ function About() {
             Our Journey of Innovation and Expertise
           </h2>
           <p className='md:text-lg md:leading-8'>
-            Since our inception, we've been at the forefront of delivering
+            Since our inception, we have been at the forefront of delivering
             cutting-edge solutions that shape the digital landscape. With [X
             years] of experience in [mention industry or field, e.g., software
             development, AI, cloud computing, etc.], we have honed our expertise
