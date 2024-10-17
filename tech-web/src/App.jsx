@@ -1,19 +1,19 @@
-import React from "react";
+
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Login } from "./components/auth/Login";
+import { Signup } from "./components/auth/Signup";
 import { Navbar } from "./components/home/Navbar";
 import { Stars } from "./components/home/Stars";
 import About from "./pages/About";
 import Career from "./pages/Career";
 import { Home } from "./pages/Home";
 import Services from "./pages/Services";
-import { Login } from "./components/auth/Login";
-import { Signup } from "./components/auth/Signup";
 
-import Contact from "./pages/Contact";
-import { Footer } from "./components/home/Footer";
 import { FloatingActionButton } from "./components/home/FloatingActionButton";
+import { Footer } from "./components/home/Footer";
 import ScrollToTop from "./components/Scrolltop";
+import Contact from "./pages/Contact";
 import { Help } from "./pages/Help";
 import { Development } from "./components/career/development";
 
