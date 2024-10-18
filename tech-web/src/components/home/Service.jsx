@@ -42,6 +42,15 @@ let data = [
       " TechEcho builds intelligent chatbots with advanced natural language understanding (NLU) and machine learning. Our chatbots support text and voice interactions, enabling businesses to automate customer service, improve user satisfaction, and provide real-time, 24/7 assistance while seamlessly integrating with existing systems.",
     image: "/assets/chatbot.png",
   },
+  {
+    index: 4,
+    service: "E-commerce solutions",
+    description:
+      " We develop innovative mobile apps for iOS and Android platforms.",
+    detail:
+      " TechEcho builds intelligent chatbots with advanced natural language understanding (NLU) and machine learning. Our chatbots support text and voice interactions, enabling businesses to automate customer service, improve user satisfaction, and provide real-time, 24/7 assistance while seamlessly integrating with existing systems.",
+    image: "/assets/chatbot.png",
+  },
 ];
 
 export const Service = () => {

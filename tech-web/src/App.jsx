@@ -16,6 +16,9 @@ import { FloatingActionButton } from "./components/home/FloatingActionButton";
 import ScrollToTop from "./components/Scrolltop";
 import { Help } from "./pages/Help";
 import { Development } from "./components/career/development";
+import { Design } from "./components/career/Design";
+import { Marketing } from "./components/career/Marketing";
+import { QueryCallForm } from "./components/career/QueryCallForm";
 
 function App() {
   return (
@@ -32,11 +35,14 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/career' element={<Career />} />
           <Route path='/career/web-dev' element={<Development />} />
+          <Route path='/career/design' element={<Design />} />
+          <Route path='/career/marketing' element={<Marketing />} />
           <Route path='/service' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/help' element={<Help />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/queryForm' element={<QueryCallForm />} />
         </Routes>
         <Footer />
         <FloatingActionButton />

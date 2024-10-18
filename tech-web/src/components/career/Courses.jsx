@@ -5,22 +5,22 @@ let data = [
     title: "Web Development",
     description:
       "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
-    image: "/assets/career/stack.png",
+    image: "/assets/career/mern.png",
     path: "/career/web-dev",
-  },
-  {
-    title: "App Development",
-    description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
-    image: "/assets/career/mobile-app.jpg",
-    path: "/career/app-dev",
   },
   {
     title: "UI/UX Designing",
     description:
       "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
-    image: "/assets/career/design.png",
+    image: "/assets/career/UI-UX.png",
     path: "/career/design",
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+    image: "/assets/career/marketing.png",
+    path: "/career/marketing",
   },
 ];
 
