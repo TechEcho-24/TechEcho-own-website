@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
 import gsap from "gsap";
+import { useRef, useState } from "react";
 
 export const Offering = () => {
   //   let [activeBox, setActiveBox] = useState(null);

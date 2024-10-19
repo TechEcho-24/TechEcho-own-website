@@ -3,26 +3,27 @@ let data = [
   {
     title: "Frontend Development",
     description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+      "Unlock your potential with our Frontend Development Course, designed to help you master the art of building responsive, interactive websites. Guided by industry experts, you'll dive into HTML, CSS, JavaScript, and modern frameworks like React.",
     image: "/assets/career/stack.png",
-    price: "12,000",
-    discPrice: "10,000",
+    price: "12,499",
+    discPrice: "9,999",
   },
   {
     title: "Backend Development",
     description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+      "Master the essentials of Backend Development with our comprehensive course, led by industry experts. Learn to build robust, scalable server-side applications using technologies like Node.js, Express, databases, and APIs. Through hands-on projects and real-world scenarios.",
     image: "/assets/career/stack.png",
-    price: "12,000",
-    discPrice: "10,000",
+    price: "12,499",
+    discPrice: "9,999",
   },
   {
     title: "Fullstack Development",
     description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+      
+"Become a versatile developer with our Fullstack Development Course, expertly designed to teach both frontend and backend technologies. Guided by industry professionals, you'll learn to build complete web applications from scratch, Through hands-on projects and real-world experience.",
     image: "/assets/career/stack.png",
-    price: "20,000",
-    discPrice: "18,000",
+    price: "20,499",
+    discPrice: "15,999",
   },
 ];
 
@@ -42,10 +43,10 @@ export const Development = () => {
                 className='flex items-center justify-between flex-col-reverse md:flex-row text-white w-10/12 rounded-lg p-6 md:p-16 border-4 border-neutral-600 relative'
               >
                 <div className='basis-1/2'>
-                  <h2 className='text-blue-500 text-3xl md:text-5xl my-4'>
+                  <h2 className='text-blue-500 text-2xl md:text-4xl font-medium my-4'>
                     {content.title}
                   </h2>
-                  <p className='md:text-xl leading-relaxed'>
+                  <p className='md:text-lg leading-relaxed'>
                     {content.description}
                   </p>
                   <p className='text-2xl mt-6 text-yellow-500'>

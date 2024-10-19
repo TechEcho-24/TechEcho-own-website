@@ -1,10 +1,10 @@
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import ToggleSidePanel from "./ToggleSidePanel";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import ToggleSidePanel from "./ToggleSidePanel";
 
 export const Navbar = () => {
   let [activePage, setActivePage] = useState("home");
@@ -97,7 +97,7 @@ export const Navbar = () => {
           <Link to={"/contact"}>Contact Us</Link>
         </li>
         <button
-          className={`border-2 border-blue-500 text-white px-6 py-2 ml-8 text-xl hover:bg-blue-500 cursor-pointer rounded-md ${
+          className={`border-2 border-[#0CEEF9] text-white px-6 py-2 ml-8 text-xl hover:bg-[#0CEEF9] cursor-pointer rounded-md ${
             activePage === "login" ? "bg-blue-500 border-none" : ""
           }`}
           onClick={() => setActivePage("login")}
