@@ -4,21 +4,21 @@ let data = [
   {
     title: "Web Development",
     description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+      "TechEcho’s Web Development course equips you with the skills to create dynamic, professional websites. Learn to design, build, and optimize sites for seamless user experiences, preparing you for a successful career in tech.",
     image: "/assets/career/mern.png",
     path: "/career/web-dev",
   },
   {
     title: "UI/UX Designing",
     description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+      "Elevate your creativity with TechEcho’s UI/UX Design course, where you’ll master the art of crafting user-friendly interfaces and intuitive designs. This course empowers you to create engaging digital experiences and excel in the design industry.",
     image: "/assets/career/UI-UX.png",
     path: "/career/design",
   },
   {
     title: "Digital Marketing",
     description:
-      "loremejksdnjkdskkdf dfjfiodsfklsd foidsjfklsd m,j opsdmflkds m, kjfiod mds iosdjfklds m,ldiodm,lsdkldkf, vervmiodf m,fdnuiwer,mdfs jkefnui",
+      "TechEcho’s Digital Marketing course provides the expertise needed to thrive in the online marketing world. Learn to craft impactful strategies, grow brand presence, and drive results, ensuring a successful career in the digital landscape.",
     image: "/assets/career/marketing.png",
     path: "/career/marketing",
   },
@@ -34,7 +34,7 @@ export const Courses = () => {
         {data.map((content, index) => {
           return (
             <>
-              <div className='flex items-center justify-between flex-col-reverse md:flex-row text-white w-10/12 rounded-lg p-16 border-4 border-neutral-600 relative'>
+              <div className='flex items-center justify-between flex-col-reverse md:flex-row text-white w-10/12 rounded-lg p-8 md:p-16 border-4 border-neutral-600 relative'>
                 <div className='basis-1/2'>
                   <h2 className='text-blue-500 text-3xl md:text-5xl my-4'>
                     {content.title}
@@ -43,7 +43,10 @@ export const Courses = () => {
                     {content.description}
                   </p>
                   <div className='flex justify-center flex-col md:flex-row md:gap-10 md:mt-6 md:absolute -bottom-14'>
-                    <Link className='btn bg-black' to={content.path}>
+                    <Link
+                      className='btn bg-black text-center'
+                      to={content.path}
+                    >
                       <span className='btn-text'>Get Info</span>
                     </Link>
                   </div>

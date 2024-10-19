@@ -9,7 +9,11 @@ export const About = () => {
         <div className='md:basis-1/2 flex md:relative'>
           <div className='bg-[#488edf] md:w-32 md:h-48  lg:h-72 hidden md:block'></div>
           <figure className='md:relative -left-16 top-11 md:w-3/4'>
-            <img src='/assets/team.png' alt='team' className='w-full md:h-[50%] lg:h-full ' />
+            <img
+              src='/assets/team.png'
+              alt='team'
+              className='w-full md:h-[50%] lg:h-full '
+            />
           </figure>
         </div>
         <div className='md:basis-1/2 text-white'>
@@ -32,7 +36,11 @@ export const About = () => {
       <div className='flex md:flex-row-reverse flex-col md:mx-32 mx-10 mt-20 items-center'>
         <div className='md:basis-1/2 flex'>
           <figure className='md:relative -right-20 top-11 md:w-3/4'>
-            <img src='/assets/carrier.png' alt='team' className='md:w-full md:h-full object-cover' />
+            <img
+              src='/assets/carrier.png'
+              alt='team'
+              className='md:w-full md:h-full object-cover'
+            />
           </figure>
           <div className='bg-[#488edf] md:w-32 md:h-48  lg:h-72 hidden md:block'></div>
         </div>
@@ -58,7 +66,11 @@ export const About = () => {
         <div className='md:basis-1/2 flex md:relative'>
           <div className='bg-[#488edf] md:w-32 md:h-48  lg:h-72 hidden md:block'></div>
           <figure className='md:relative -left-16 top-11 md:w-3/4'>
-            <img src='/assets/founder.png' alt='team' className='md:w-full md:h-full  object-fill' />
+            <img
+              src='/assets/founder.png'
+              alt='team'
+              className='md:w-full md:h-full  object-fill'
+            />
           </figure>
         </div>
         <div className='md:basis-1/2 text-white'>
@@ -66,13 +78,18 @@ export const About = () => {
             <img src='/assets/founderHead.png' alt='' />
           </div>
           <p className='my-4 text-sm md:text-sm lg-text-xl'>
-            At TechEcho, we are at the forefront of innovation, crafting
-            cutting-edge technological solutions tailored to meet the needs of a
-            dynamic and ever-evolving market. Based in Kanpur, Uttar Pradesh,
-            our mission is to leverage advanced technology to simplify complex
-            challenges, helping businesses scale and adapt in a competitive
-            landscape. From software development to AI-driven solutions, we are
-            dedicated to driving progress through tech.
+            "Anuj Sachan, the visionary founder of TechEcho Software, hails from
+            Kanpur, Uttar Pradesh, and has a background in engineering. With a
+            deep commitment to innovation and skill development, he founded
+            TechEcho to be more than just an educational platform—it’s a
+            launchpad for students aspiring to secure high-paying jobs in the
+            tech industry. By offering cutting-edge, industry-relevant courses,
+            Anuj is dedicated to bridging the gap between education and
+            employment, empowering students to unlock their potential and thrive
+            in a competitive job market. In addition to education, TechEcho is a
+            client-focused company, offering a wide range of tech services to
+            meet industry demands. His passion for student success and shaping
+            future tech leaders drives the mission of TechEcho."
           </p>
           <button className='btn'>
             <span className='btn-text'>Learn More</span>

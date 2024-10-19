@@ -33,25 +33,25 @@ export const QueryCallForm = () => {
 
   return (
     <>
-      <div className='h-screen pt-[10rem]'>
-        <h2 className='text-white text-3xl text-center'>Enter your details</h2>
-        <form className='flex flex-col justify-center items-center gap-5 mt-10 border-4 border-neutral-700 w-1/2 mx-auto p-6'>
+      <div>
+        <h2 className='text-2xl text-center'>Enter your details</h2>
+        <form className='text-black grid grid-cols-2 gap-5 mx-auto my-4'>
           <input
             type='text'
             placeholder='Full name'
             name='name'
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className='w-full p-2 text-white bg-gray-800 rounded-lg'
+            className='w-full p-2 bg-white rounded-lg'
             required
           />
           <input
-            type='number'
+            type='tel'
             placeholder='Mobile no.'
             name='mobNumber'
             value={mobNumber}
             onChange={(e) => setMobNumber(e.target.value)}
-            className='w-full p-2 text-white bg-gray-800 rounded-lg'
+            className='w-full p-2 bg-white rounded-lg'
             required
           />
           <input
@@ -62,7 +62,7 @@ export const QueryCallForm = () => {
             min={minDate}
             max={maxDate}
             onChange={({ target }) => setSelectedDate(target.value)}
-            className='w-full p-2 text-white bg-gray-800 rounded-lg'
+            className='w-full p-2 bg-white rounded-lg text-black'
             required
           />
           <select
@@ -70,7 +70,7 @@ export const QueryCallForm = () => {
             name='time'
             value={selectedTime}
             onChange={({ target }) => setSelectedTime(target.value)}
-            className='w-full p-2 text-white bg-gray-800 rounded-lg'
+            className='w-full p-2 bg-white rounded-lg text-black'
             required
           >
             <option value=''>Select Time</option>
@@ -79,18 +79,13 @@ export const QueryCallForm = () => {
             <option value='15:00'>03:00 PM</option>
             <option value='18:00'>06:00 PM</option>
           </select>
-          <input
-            type='text'
-            placeholder='Subject'
-            className='w-full p-2 text-white bg-gray-800 rounded-lg'
-          />
-          <button
-            onClick={handleSubmit}
-            className='w-full p-4 text-white bg-gray-900 rounded-lg hover:bg-blue-500'
-          >
-            Submit Now
-          </button>
         </form>
+        <button
+          onClick={handleSubmit}
+          className='w-full p-4 bg-black rounded-lg hover:bg-blue-700 my-2'
+        >
+          Submit Now
+        </button>
       </div>
     </>
   );

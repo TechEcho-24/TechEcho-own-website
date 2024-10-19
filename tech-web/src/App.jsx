@@ -1,4 +1,3 @@
-
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Login } from "./components/auth/Login";
@@ -18,7 +17,7 @@ import { Help } from "./pages/Help";
 import { Development } from "./components/career/development";
 import { Design } from "./components/career/Design";
 import { Marketing } from "./components/career/Marketing";
-import { QueryCallForm } from "./components/career/QueryCallForm";
+import EnrollForm from "./components/career/EnrollForm";
 
 function App() {
   return (
@@ -42,7 +41,7 @@ function App() {
           <Route path='/help' element={<Help />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/queryForm' element={<QueryCallForm />} />
+          <Route path='/enroll' element={<EnrollForm />} />
         </Routes>
         <Footer />
         <FloatingActionButton />

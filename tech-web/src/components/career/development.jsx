@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { QueryCallForm } from "./QueryCallForm";
 let data = [
   {
     title: "Frontend Development",
@@ -19,8 +21,7 @@ let data = [
   {
     title: "Fullstack Development",
     description:
-      
-"Become a versatile developer with our Fullstack Development Course, expertly designed to teach both frontend and backend technologies. Guided by industry professionals, you'll learn to build complete web applications from scratch, Through hands-on projects and real-world experience.",
+      "Become a versatile developer with our Fullstack Development Course, expertly designed to teach both frontend and backend technologies. Guided by industry professionals, you'll learn to build complete web applications from scratch, Through hands-on projects and real-world experience.",
     image: "/assets/career/stack.png",
     price: "20,499",
     discPrice: "15,999",
@@ -28,12 +29,13 @@ let data = [
 ];
 
 export const Development = () => {
+  let [formState, setFormState] = useState(false);
   return (
     <>
       <div className='pt-[10rem] flex flex-col justify-center items-center mb-[10rem] gap-10 md:gap-32'>
-        <h1 className='text-3xl md:text-6xl font-bold capitalize text-white w-10/12 md:w-1/2 text-center'>
-          Explore our <span className='text-blue-400'>web development </span>
-          courses
+        <h1 className='text-3xl md:text-6xl font-bold capitalize text-white w-[80%] md:w-1/2 text-center'>
+          Explore our{" "}
+          <span className='text-blue-400 py-10'>web development</span> courses
         </h1>
         {data.map((content, index) => {
           return (
@@ -56,9 +58,9 @@ export const Development = () => {
                     </span>
                   </p>
                   <div className='md:absolute -bottom-14'>
-                    <button className='btn bg-black'>
+                    <Link className='btn bg-black' to={"/enroll"}>
                       <span className='btn-text'>Get enrolled</span>
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <figure className='basis-1/3'>
@@ -72,14 +74,23 @@ export const Development = () => {
             </>
           );
         })}
-        <div className='bg-blue-500 text-white w-10/12 flex items-center px-6 py-10 justify-between rounded-xl'>
+        <div className='bg-blue-500 text-white w-10/12 flex flex-col md:flex-row items-center px-6 py-10 justify-between rounded-xl'>
           <div className='text-3xl'>
             <p>Not sure about the course structure?</p>
             <p>Schedule a call</p>
           </div>
-          <Link className='bg-black p-4 rounded-xl' to={"/queryForm"}>
-            Schedule a call
-          </Link>
+          <div className='mt-6 md:m-0'>
+            {formState ? (
+              <QueryCallForm />
+            ) : (
+              <button
+                className='bg-black p-4 rounded-xl hover:bg-blue-700 w-full'
+                onClick={() => setFormState(true)}
+              >
+                Schedule a call
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </>
