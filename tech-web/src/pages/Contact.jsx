@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ContactForm } from "../components/home/ContactForm";
 
 function Contact() {
@@ -9,19 +9,19 @@ function Contact() {
       </div>
 
       <div className='flex md:flex-row flex-col items-center justify-between pt-40 px-10 md:px-32'>
-        <div class='text-white mb-6 basis-1/2'>
-          <h2 class='text-4xl font-bold text-blue-500 md:text-7xl md:mb-32 mb-8'>
+        <div className='text-white mb-6 basis-1/2'>
+          <h2 className='text-4xl font-bold text-blue-500 md:text-7xl md:mb-32 mb-8'>
             Contact Details
           </h2>
-          <p class='mb-2 md:mb-4 md:text-2xl font-bold'>
-            <strong className='mr-2 text-xl md:text-3xl'>Email:</strong>{" "}
+          <p className='mb-2 md:mb-4 md:text-2xl font-bold'>
+            <strong classNameName='mr-2 text-xl md:text-3xl'>Email:</strong>{" "}
             techecho.kanpur@gmail.com
           </p>
-          <p class='mb-2 md:mb-4 md:text-2xl font-bold'>
+          <p className='mb-2 md:mb-4 md:text-2xl font-bold'>
             <strong className='mr-2 text-xl md:text-3xl'>Phone:</strong>{" "}
             +91-8318999388
           </p>
-          <p class='mb-4 md:mb-4 md:text-2xl font-bold'>
+          <p className='mb-4 md:mb-4 md:text-2xl font-bold'>
             <strong className='mr-2 text-xl md:text-3xl'>Address:</strong>Phase
             3rd, Lig 41, Tatya Tope Nagar, Kanpur, Uttar Pradesh 208022
           </p>

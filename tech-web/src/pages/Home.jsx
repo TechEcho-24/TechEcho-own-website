@@ -8,7 +8,7 @@ import { ContactForm } from "../components/home/ContactForm";
 export const Home = () => {
   return (
     <>
-      <div className='relative'>
+      <div className="relative">
         <Hero />
         <Stats />
         <Intro />
