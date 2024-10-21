@@ -29,14 +29,17 @@ let data = [
 ];
 
 export const Development = () => {
-  let [formState, setFormState] = useState(false);
   return (
     <>
-      <div className='pt-[10rem] flex flex-col justify-center items-center mb-[10rem] gap-10 md:gap-32'>
-        <h1 className='text-3xl md:text-6xl font-bold capitalize text-white w-[80%] md:w-1/2 text-center'>
-          Explore our{" "}
-          <span className='text-blue-400 py-10'>web development</span> courses
-        </h1>
+      <div className='pt-[4rem] md:pt-[10rem] flex flex-col justify-center items-center mb-[10rem] gap-10 md:gap-32'>
+        <div className='md:w-2/3 text-center'>
+          <h2 className='text-3xl md:text-6xl font-bold capitalize text-white '>
+            Explore our <span className='text-blue-500'>web</span>
+          </h2>
+          <h2 className='text-3xl md:text-6xl font-bold capitalize text-white mt-4'>
+            <span className='text-blue-500'>Development </span> Courses
+          </h2>
+        </div>
         {data.map((content, index) => {
           return (
             <>
@@ -80,16 +83,12 @@ export const Development = () => {
             <p>Schedule a call</p>
           </div>
           <div className='mt-6 md:m-0'>
-            {formState ? (
-              <QueryCallForm />
-            ) : (
-              <button
-                className='bg-black p-4 rounded-xl hover:bg-blue-700 w-full'
-                onClick={() => setFormState(true)}
-              >
-                Schedule a call
-              </button>
-            )}
+            <Link
+              to={"/schedule"}
+              className='bg-black p-4 rounded-xl hover:bg-blue-700 w-full'
+            >
+              Schedule a call
+            </Link>
           </div>
         </div>
       </div>

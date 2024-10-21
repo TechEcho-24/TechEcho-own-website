@@ -18,6 +18,7 @@ import { Development } from "./components/career/development";
 import { Design } from "./components/career/Design";
 import { Marketing } from "./components/career/Marketing";
 import EnrollForm from "./components/career/EnrollForm";
+import { QueryCallForm } from "./components/career/QueryCallForm";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/enroll' element={<EnrollForm />} />
+          <Route path='/schedule' element={<QueryCallForm />} />
         </Routes>
         <Footer />
         <FloatingActionButton />
