@@ -1,5 +1,5 @@
-import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
-import React, { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
 
 export const QueryCallForm = () => {
   const [userData, setUserData] = useState({
