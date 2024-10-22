@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faFacebook,
   faInstagram,
   // faLetterboxd,
   faLinkedinIn,
@@ -32,24 +33,30 @@ export const Footer = () => {
               <p className='text-md w-3/5'>
                 Building the Future, Powered by Technology.
               </p>
-              <div className='flex justify-between w-44 text-4xl my-8'>
+              <div className='flex justify-between w-52 text-4xl my-8'>
                 <a
-                  href='linkedin.com'
-                  className='hover:bg-blue-500 p-2 rounded-lg'
+                  href='https://www.linkedin.com/in/tech-echo-bb9793325/'
+                  className='hover:bg-blue-500 p-2 rounded-xl'
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
                 <a
-                  href='google.com'
-                  className='hover:bg-gradient-to-tr from-purple-600 via-red-600 to-yellow-400 rounded-lg p-2'
+                  href='https://www.instagram.com/techecho_2024'
+                  className='hover:bg-gradient-to-tr from-purple-600 via-red-600 to-yellow-400 rounded-xl p-2'
                 >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <a
-                  href='linkedin.com'
-                  className='hover:bg-black p-2 rounded-lg'
+                  href='https://x.com/AnujSachan07'
+                  className='hover:bg-black p-2 rounded-xl'
                 >
                   <FontAwesomeIcon icon={faXTwitter} />
+                </a>
+                <a
+                  href='https://www.facebook.com/profile.php?id=61564661356724'
+                  className='hover:bg-blue-700 p-2 rounded-xl'
+                >
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
               </div>
             </div>

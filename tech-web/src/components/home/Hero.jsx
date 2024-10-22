@@ -31,12 +31,17 @@ export const Hero = () => {
         <p className='text-base text-center md:text-left text-[#06EFFA]'>
           We are committed towards transforming ideas into tangible solutions
         </p>
-        <button className='btn text-white'>
-          <span className='btn-text'>Explore Now</span>
-        </button>
-        <Link className='btn text-white ml-4' to={"/schedule"}>
-          <span className='btn-text'>Schedule a Demo</span>
-        </Link>
+        <div>
+          <button className='btn text-white text-sm md:text-xl'>
+            <a className='btn-text'>Explore Now</a>
+          </button>
+          <Link
+            className='btn text-white ml-4 text-sm md:text-xl'
+            to={"/schedule"}
+          >
+            <span className='btn-text'>Schedule a Demo</span>
+          </Link>
+        </div>
       </div>
       <figure className='flex flex-col items-center md:mt-0'>
         <img src='/assets/tech.png' alt='tech' />

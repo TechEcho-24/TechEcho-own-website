@@ -4,6 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 let data = [
   {
     index: 0,
@@ -95,9 +96,9 @@ export const Service = () => {
             {selectedCard.service}
           </h1>
           <p className='md:text-xl'>{selectedCard.detail}</p>
-          <button className='btn'>
+          <Link className='btn' to={"/service"}>
             <span className='btn-text'>View More</span>
-          </button>
+          </Link>
         </div>
         <div className='w-full xl:w-3/4 relative flex items-center justify-center'>
           <button

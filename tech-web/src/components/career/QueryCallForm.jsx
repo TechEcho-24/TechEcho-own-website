@@ -8,6 +8,7 @@ export const QueryCallForm = () => {
     scheduleDate: "",
     scheduleTime: "",
     message: "",
+    course: "",
   });
   const [minDate, setMinDate] = useState("");
 
@@ -34,10 +35,10 @@ export const QueryCallForm = () => {
 
   return (
     <>
-      <div className='h-screen pt-[10rem] w-2/3 mx-auto'>
+      <div className='h-screen pt-[5rem] md:pt-[10rem] w-10/12 md:w-2/3 mx-auto'>
         <h2 className='text-2xl text-white text-center'>Enter your details</h2>
-        <form className='my-[10rem] '>
-          <div className='flex justify-between my-4'>
+        <form className='my-[2rem] md:my-[10rem] text-white'>
+          <div className='flex justify-between my-4 md:flex-row gap-4 flex-col'>
             <input
               type='text'
               placeholder='Name'
@@ -49,7 +50,7 @@ export const QueryCallForm = () => {
                   name: e.target.value,
                 }))
               }
-              className='w-[48%] p-4 text-xl rounded-lg  placeholder:text-black'
+              className='md:w-[48%] w-full p-4 text-xl rounded-lg bg-transparent text-white  placeholder:text-white border-2 border-neutral-700'
               required
             />
 
@@ -64,11 +65,11 @@ export const QueryCallForm = () => {
                   mobNumber: e.target.value,
                 }))
               }
-              className='w-[48%] p-4 text-xl rounded-lg placeholder:text-black'
+              className='md:w-[48%] w-full p-4 text-xl rounded-lg bg-transparent text-white placeholder:text-white border-2 border-neutral-700'
               required
             />
           </div>
-          <div className='flex justify-between my-4'>
+          <div className='flex justify-between my-4 flex-col md:flex-row gap-4'>
             <input
               type='date'
               id='date'
@@ -81,8 +82,7 @@ export const QueryCallForm = () => {
                   scheduleDate: e.target.value,
                 }))
               }
-              className='w-[48%] p-4 text-xl rounded-lg text-black'
-              required
+              className='text-white md:w-[48%] w-full p-4 text-xl rounded-lg text-darkblue bg-lightblue border-2 border-neutral-700 bg-transparent'
             />
             <select
               id='time'
@@ -94,21 +94,77 @@ export const QueryCallForm = () => {
                   scheduleTime: target.value,
                 }))
               }
-              className='w-[48%] p-4 text-xl rounded-lg text-black'
+              className='md:w-[48%] w-full p-4 text-xl rounded-lg bg-transparent border-2 border-neutral-700'
               required
             >
-              <option value=''>Select Time</option>
-              <option value='09:00'>09:00 AM</option>
-              <option value='12:00'>12:00 PM</option>
-              <option value='15:00'>03:00 PM</option>
-              <option value='18:00'>06:00 PM</option>
+              <option value='' className='text-black'>
+                Select Time
+              </option>
+              <option value='09:00' className='text-black'>
+                09:00 AM
+              </option>
+              <option value='12:00' className='text-black'>
+                12:00 PM
+              </option>
+              <option value='15:00' className='text-black'>
+                03:00 PM
+              </option>
+              <option value='18:00' className='text-black'>
+                06:00 PM
+              </option>
             </select>
           </div>
+          <select
+            onChange={({ target }) =>
+              setUserData((prevUserData) => ({
+                ...prevUserData,
+                course: target.value,
+              }))
+            }
+            className=' bg-transparent w-full p-4 border border-neutral-700 rounded-md focus:outline-none focus:border-blue-600 mb-4'
+          >
+            <option
+              value='select your course'
+              className='bg-transparent text-black'
+            >
+              Select courses
+            </option>
+            <option
+              value='select your qualification'
+              className='bg-transparent text-black'
+            >
+              Full stack development
+            </option>
+            <option
+              value='select your qualification'
+              className='bg-transparent text-black'
+            >
+              Frontend development
+            </option>
+            <option
+              value='select your qualification'
+              className='bg-transparent text-black'
+            >
+              Backend development
+            </option>
+            <option
+              value='select your qualification'
+              className='bg-transparent text-black'
+            >
+              Ui/UX Design
+            </option>
+            <option
+              value='select your qualification'
+              className='bg-transparent text-black'
+            >
+              Digital Marketing
+            </option>
+          </select>
           <textarea
             placeholder='Leave a message'
             name='message'
             rows={5}
-            className='w-full text-black text-xl p-4 placeholder:text-black'
+            className='w-full text-white text-xl p-4 placeholder:text-white border-2 border-neutral-700 bg-transparent'
             onChange={({ target }) =>
               setUserData((prevUserData) => ({
                 ...prevUserData,

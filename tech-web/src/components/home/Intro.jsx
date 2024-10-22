@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Intro = () => {
   return (
     <>
@@ -15,9 +17,9 @@ export const Intro = () => {
             landscape. From software development to AI-driven solutions, we are
             dedicated to driving progress through tech.
           </p>
-          <button className='btn'>
+          <Link className='btn' to={"/contact"}>
             <span className='btn-text'>Connect With Us</span>
-          </button>
+          </Link>
         </div>
         <div className='basis-5/12'>
           <img src='/assets/intro.svg' alt='' />

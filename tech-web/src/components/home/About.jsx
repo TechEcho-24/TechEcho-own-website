@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const About = () => {
   return (
     <>
@@ -27,9 +29,9 @@ export const About = () => {
             just products, but tailored experiences that propel your business
             forward.
           </p>
-          <button className='btn'>
+          <Link className='btn' to={"/"}>
             <span className='btn-text'>View More Details</span>
-          </button>
+          </Link>
         </div>
       </div>
       {/* carrier  */}
@@ -56,9 +58,9 @@ export const About = () => {
             Upon completion, students receive a certification to validate their
             skills and kickstart their tech careers.
           </p>
-          <button className='btn'>
+          <Link className='btn' to={"/career"}>
             <span className='btn-text'>Get More Details</span>
-          </button>
+          </Link>
         </div>
       </div>
       {/* founder  */}
@@ -91,9 +93,9 @@ export const About = () => {
             meet industry demands. His passion for student success and shaping
             future tech leaders drives the mission of TechEcho."
           </p>
-          <button className='btn'>
+          <Link className='btn' to={"/about"}>
             <span className='btn-text'>Learn More</span>
-          </button>
+          </Link>
         </div>
       </div>
     </>
