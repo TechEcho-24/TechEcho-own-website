@@ -29,7 +29,7 @@ export const Courses = () => {
     <>
       <div className='pt-[10rem] flex flex-col justify-center items-center mb-[10rem] gap-20'>
         <h1 className='text-blue-500 text-4xl md:text-6xl font-bold'>
-          Choose your field
+        Unlock Your Future: Master the Skills of Tomorrow.
         </h1>
         {data.map((content, index) => {
           return (

@@ -32,9 +32,12 @@ export const Hero = () => {
           We are committed towards transforming ideas into tangible solutions
         </p>
         <div>
-          <button className='btn text-white text-sm md:text-xl'>
+          <Link 
+          to={"/service"}
+           className='btn text-white text-sm md:text-xl'>
             <a className='btn-text'>Explore Now</a>
-          </button>
+          </Link 
+          >
           <Link
             className='btn text-white ml-4 text-sm md:text-xl'
             to={"/schedule"}
